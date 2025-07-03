@@ -1,0 +1,8 @@
+stages:
+  train_model:
+    cmd: python scripts/train_model.py
+    deps:
+    - data/airline_1.csv
+    - scripts/train_model.py
+    outs:
+    - model.joblib

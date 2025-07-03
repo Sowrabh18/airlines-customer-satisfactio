@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python scripts/train_model.py
+    deps:
+    - path: data/airline_1.csv
+      hash: md5
+      md5: d26e19c434f20d0c7e2f5ed586008f07
+      size: 12875200
+    - path: scripts/train_model.py
+      hash: md5
+      md5: 99fa556fc36689b6b5a6f4b892174ca2
+      size: 1173
+    outs:
+    - path: model.joblib
+      hash: md5
+      md5: 8cf9cf37e526e94293a424bb92962591
+      size: 76017769
